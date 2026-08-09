@@ -1,0 +1,41 @@
+---
+title: "Files and SFTP"
+sidebarTitle: "Files and SFTP"
+description: "Edit server files in the browser or transfer larger files securely with SFTP."
+icon: "folder-open"
+---
+
+# Files and SFTP
+
+Use the panel file manager for quick edits and SFTP for large uploads, folders, or repeated transfers.
+
+## File manager
+
+Select **Files** from your server sidebar. You can create folders, upload files, edit text-based configuration files, rename items, and download files directly in the browser.
+
+<Note>
+  Stop the server before replacing worlds, databases, or important configuration files. Some applications overwrite changed files during shutdown.
+</Note>
+
+## Connect with SFTP
+
+Your exact SFTP hostname, port, username, and connection instructions are shown in the panel.
+
+<Steps>
+  <Step title="Install an SFTP client">
+    Use a client such as WinSCP, Cyberduck, or FileZilla.
+  </Step>
+  <Step title="Copy the panel credentials">
+    Open your server's **Settings** or SFTP connection area and copy the displayed host, port, and username.
+  </Step>
+  <Step title="Authenticate">
+    Use the same password as your game-panel account unless the panel specifies otherwise.
+  </Step>
+  <Step title="Transfer files">
+    Connect and upload files into the correct server directory.
+  </Step>
+</Steps>
+
+<Warning>
+  SFTP is not plain FTP. Make sure your client uses the **SFTP** protocol.
+</Warning>

@@ -1,0 +1,34 @@
+---
+title: "Plugins, mods, and modpacks"
+sidebarTitle: "Plugins, mods, and modpacks"
+description: "Install and manage Minecraft plugins, individual mods, and complete modpacks."
+icon: "puzzle-piece"
+---
+
+# Plugins, mods, and modpacks
+
+The Sculk panel adapts its management tools to the server software you run.
+
+## Plugins
+
+Plugins run on server software such as Paper or Purpur. Install compatible `.jar` files into the `plugins` folder, then restart the server. Configure installed plugins from their generated folders.
+
+## Mods
+
+Mods require a loader such as Fabric, Forge, or NeoForge. Upload compatible mod files into the `mods` folder. In most cases, every player must install the same loader, Minecraft version, and client-side mod set.
+
+## Modpacks
+
+A modpack bundles a tested set of mods and configurations. Use the panel's modpack installer when available, or upload the pack's server files through SFTP.
+
+<Warning>
+  Never mix Paper plugins with Forge or Fabric mods unless a specific compatibility layer explicitly supports the combination. Back up the server before changing loaders or installing a large pack.
+</Warning>
+
+## Compatibility checklist
+
+- Minecraft version matches
+- Correct loader and loader version
+- Required dependencies are installed
+- Client and server mod lists agree
+- Enough memory is allocated for the pack

@@ -1,47 +1,42 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "Launch your first server"
+description: "Go from checkout to joining your new game server in a few minutes."
+sidebarTitle: "Quickstart"
+icon: "rocket"
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
-
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
-
-## Prerequisites
-
-Before you begin, you must have:
-
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+Follow these steps after purchasing a Sculk Hosting plan.
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
-
-    ```bash
-    npm install your-package
-    ```
+  <Step title="Open your activation email">
+    Once payment is confirmed, Sculk automatically provisions your service. Use the link in your email to sign in to the billing portal and game panel.
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
-
-    ```bash
-    your-cli init
-    ```
+  <Step title="Open the game panel">
+    Visit [panel.sculkhosting.com](https://panel.sculkhosting.com) and select your server.
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
-
-    ```bash
-    your-cli start
-    ```
+  <Step title="Finish the first-time installation">
+    If prompted, select the game or server software you want to run. Minecraft servers can use software such as Paper, Purpur, Fabric, Forge, or another compatible server jar.
+  </Step>
+  <Step title="Start the server">
+    Select **Start** on the Console page. Watch the console until the server reports that startup is complete.
+  </Step>
+  <Step title="Copy the server address">
+    Copy the primary address shown in the panel and add it to your game's multiplayer server list.
   </Step>
 </Steps>
 
-<Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
+<Warning>
+  For Minecraft, you may need to accept the EULA before the first successful start. Open the generated `eula.txt` file, change `eula=false` to `eula=true`, save it, and restart the server.
+</Warning>
 
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
-</Tip>
+## What to do next
+
+<CardGroup cols={2}>
+  <Card title="Learn the panel" icon="gauge-high" href="/server-management/panel-overview">
+    Understand power controls, resource usage, console output, and server details.
+  </Card>
+
+  <Card title="Configure Minecraft" icon="cube" href="/minecraft/getting-started">
+    Choose server software and begin customizing your server.
+  </Card>
+</CardGroup>

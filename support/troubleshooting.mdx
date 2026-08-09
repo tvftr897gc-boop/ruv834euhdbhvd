@@ -1,0 +1,32 @@
+---
+title: "Troubleshooting"
+sidebarTitle: "Troubleshooting"
+description: "Resolve common startup, connection, performance, and file issues."
+icon: "wrench"
+---
+
+# Troubleshooting
+
+Start with the console. The final error shown is often a symptom, so read several lines above it to find the first meaningful failure.
+
+<AccordionGroup>
+  <Accordion title="The server will not start">
+    Confirm the EULA is accepted, review the console for a missing file or dependency, and check that the selected software supports your game version. If you recently installed something, remove it or restore a backup.
+  </Accordion>
+
+  <Accordion title="Players cannot connect">
+    Confirm the server is online, copy the primary address exactly, check that the client version matches, and review whitelist or ban settings. Modded players must also use the correct loader and modpack.
+  </Accordion>
+
+  <Accordion title="The server is lagging">
+    Check CPU and memory use, console warnings, player activity, world generation, entity counts, view distance, and recently installed plugins or mods. A larger plan helps only when the workload genuinely exceeds the current resources.
+  </Accordion>
+
+  <Accordion title="A plugin or mod does not load">
+    Verify the Minecraft version, software or loader, dependencies, and file placement. Plugin files belong in `plugins`; mod files belong in `mods`.
+  </Accordion>
+</AccordionGroup>
+
+## Before contacting support
+
+Collect the server identifier, time the issue occurred, steps to reproduce it, relevant console output, and a list of recent changes. Never send passwords or account recovery codes.

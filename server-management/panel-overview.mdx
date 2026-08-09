@@ -1,0 +1,29 @@
+---
+title: "Panel overview"
+sidebarTitle: "Panel overview"
+description: "Learn the essential controls and information available in the Sculk game panel."
+icon: "gauge-high"
+---
+
+# Panel overview
+
+The Sculk game panel is the control center for your server. Use it to control power, watch live output, manage files, create backups, and invite other people to help.
+
+## Main controls
+
+- **Start** boots the server.
+- **Restart** safely stops and starts it again.
+- **Stop** requests a graceful shutdown.
+- **Kill** immediately terminates the process and should only be used when the server will not stop normally.
+
+<Warning>
+  Avoid using **Kill** unless the server is frozen. An immediate shutdown can corrupt files that are being written.
+</Warning>
+
+## Resource usage
+
+The overview displays live CPU, memory, disk, and network activity. Brief CPU spikes during startup or world generation are normal. If memory remains near its limit or the server repeatedly stops, review your plugins or mods and consider a larger plan.
+
+## Server address
+
+Use the primary allocation shown on the server page to connect. Additional port allocations may be used by compatible plugins, voice services, maps, or other tools.

@@ -1,0 +1,32 @@
+---
+title: "Upload a world"
+sidebarTitle: "Upload a world"
+description: "Replace your Minecraft world with an existing single-player or server world."
+icon: "earth-americas"
+---
+
+# Upload a world
+
+You can move an existing Minecraft world to your Sculk server through the file manager or SFTP.
+
+<Steps>
+  <Step title="Stop the server">
+    Wait for it to fully stop before changing world files.
+  </Step>
+  <Step title="Prepare the world">
+    Locate the folder containing `level.dat`, `region`, and the other world data. Compress it for browser upload, or transfer the folder directly with SFTP.
+  </Step>
+  <Step title="Upload and extract">
+    Upload the world into the server's root directory and extract it if necessary.
+  </Step>
+  <Step title="Set the world name">
+    In `server.properties`, set `level-name` to the uploaded folder's exact name.
+  </Step>
+  <Step title="Start and verify">
+    Start the server and confirm that it loads the expected world.
+  </Step>
+</Steps>
+
+<Note>
+  Keep a backup of the original server world until you have verified the upload, player data, Nether, and End.
+</Note>
