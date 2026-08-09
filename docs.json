@@ -1,13 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "name": "Sculk Hosting",
   "colors": {
     "primary": "#38BDF8",
     "light": "#38BDF8",
     "dark": "#0EA5E9"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/sk2.png",
+    "dark": "/images/sk2.png"
+  },
   "navigation": {
     "pages": [
       {
@@ -55,15 +58,14 @@
       {
         "group": "Getting Started",
         "pages": [
-          "index",
-          "quickstart"
+          "index"
         ]
       }
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/adhjasdhdsagh.png",
+    "dark": "/images/adhjasdhdsagh.png"
   },
   "navbar": {
     "links": [
@@ -99,5 +101,11 @@
       "discord": "https://discord.gg/sculkhosting"
     }
   },
-  "description": "Guides for setting up, managing, and troubleshooting your Sculk Hosting game server."
+  "description": "Guides for setting up, managing, and troubleshooting your Sculk Hosting game server.",
+  "background": {
+    "decoration": "windows",
+    "color": {
+      "dark": "#1d2124"
+    }
+  }
 }
