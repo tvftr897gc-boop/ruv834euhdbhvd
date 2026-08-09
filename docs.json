@@ -64,8 +64,8 @@
     ]
   },
   "logo": {
-    "light": "/images/adhjasdhdsagh.png",
-    "dark": "/images/adhjasdhdsagh.png"
+    "light": "/images/sk2.png",
+    "dark": "/images/sk2.png"
   },
   "navbar": {
     "links": [
@@ -87,18 +87,12 @@
   "contextual": {
     "options": [
       "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "view"
     ]
   },
   "footer": {
     "socials": {
-      "discord": "https://discord.gg/sculkhosting"
+      "discord": "https://discord.gg/tesjNBszQe"
     }
   },
   "description": "Guides for setting up, managing, and troubleshooting your Sculk Hosting game server.",
