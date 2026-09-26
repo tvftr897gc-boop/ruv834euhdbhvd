@@ -1,39 +1,20 @@
 ---
-title: "Backups and restores"
-sidebarTitle: "Backups and restores"
-description: "Create, download, and restore backups of your game server."
-icon: "clock-rotate-left"
+title: "Create and restore backups"
+description: "Protect your files before imports, modpack installs, and major changes."
 ---
 
-# Backups and restores
-
-Backups protect your server from broken updates, accidental deletions, world corruption, and configuration mistakes.
+Open **Backups** on your server to see existing backups and the number of backup slots available for that server.
 
 ## Create a backup
 
-<Steps>
-  <Step title="Open Backups">
-    Select **Backups** in the server sidebar.
-  </Step>
-  <Step title="Create the snapshot">
-    Select **Create Backup**, give it a clear name, and start the backup.
-  </Step>
-  <Step title="Wait for completion">
-    Do not restart the server or make major file changes while the backup is being created.
-  </Step>
-</Steps>
+1. Select **New backup**.
+2. Complete the options shown in the panel and start the backup.
+3. Wait until its status shows that it is complete before making changes.
+
+Create a backup before installing a modpack, importing from another host, changing server software, or replacing a world. If the server has no free backup slots, check which backups you still need before removing any.
 
 ## Restore a backup
 
-Stop the server, open the backup's action menu, choose **Restore**, and confirm the operation. Start the server after the restore completes.
+Choose a completed backup in **Backups** and use its restore action. Restoring replaces current server files with the saved version. If you may need the current state later, make another backup or download the important files first.
 
-<Warning>
-  Restoring replaces current server data with the contents of the selected backup. Download or create a fresh backup first if you may need the current files later.
-</Warning>
-
-## Good backup habits
-
-- Create a backup before updating server software, plugins, mods, or modpacks.
-- Keep more than one restore point.
-- Download important long-term archives to a device you control.
-- Test critical restores before you depend on them.
+<Warning>A backup stored in the panel is not a substitute for a copy you control outside the server. Download important backups when long-term retention matters.</Warning>

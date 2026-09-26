@@ -1,7 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
-  "name": "Sculk Docs",
+  "name": "Sculk Hosting Docs",
+  "description": "Guides for setting up, managing, and troubleshooting your Sculk Hosting game server.",
   "colors": {
     "primary": "#38BDF8",
     "light": "#38BDF8",
@@ -11,96 +12,60 @@
     "light": "/images/sk2.png",
     "dark": "/images/sk2.png"
   },
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "groups": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "getting-started/index"
-        ],
-        "icon": "rocket"
-      },
-      {
-        "group": "Server Management",
-        "icon": "server",
-        "pages": [
-          "server-management/panel-overview",
-          "server-management/files-sftp",
-          "server-management/backups"
-        ]
-      },
-      {
-        "group": "Minecraft",
-        "icon": "cube",
-        "pages": [
-          "minecraft/getting-started",
-          "minecraft/plugins-mods-modpacks",
-          "minecraft/upload-world"
-        ]
-      },
-      {
-        "group": "Account & Billing",
-        "icon": "credit-card",
-        "pages": [
-          "account-billing/manage-service"
-        ]
-      },
-      {
-        "group": "Support",
-        "icon": "life-ring",
-        "pages": [
-          "support/troubleshooting",
-          "support/getting-help"
-        ]
-      }
-    ]
-  },
   "logo": {
     "light": "/images/sk2.png",
     "dark": "/images/sk2.png"
   },
-  "navbar": {
-    "links": [
+  "navigation": {
+    "groups": [
       {
-        "href": "https://panel.sculkhosting.com",
-        "label": "Game Panel"
+        "group": "Getting Started",
+        "icon": "rocket",
+        "pages": ["getting-started/index", "getting-started/quickstart", "getting-started/connect"]
       },
       {
-        "href": "https://my.sculkhosting.com",
-        "label": "Billing"
+        "group": "Server Management",
+        "icon": "server",
+        "pages": ["server-management/panel-overview", "server-management/files-sftp", "server-management/backups", "server-management/settings-network", "server-management/schedules", "server-management/migration", "server-management/databases-users"]
+      },
+      {
+        "group": "Minecraft",
+        "icon": "cube",
+        "pages": ["minecraft/getting-started", "minecraft/plugins-mods-modpacks", "minecraft/upload-world"]
+      },
+      {
+        "group": "Account & Billing",
+        "icon": "credit-card",
+        "pages": ["account-billing/manage-service"]
+      },
+      {
+        "group": "Support",
+        "icon": "life-ring",
+        "pages": ["support/troubleshooting", "support/getting-help"]
       }
+    ]
+  },
+  "navbar": {
+    "links": [
+      { "href": "https://panel.sculkhosting.com", "label": "Game Panel" },
+      { "href": "https://my.sculkhosting.com", "label": "Billing" }
     ],
     "primary": {
       "type": "button",
       "label": "Get Support",
-      "href": "https://my.sculkhosting.com"
+      "href": "https://discord.gg/c94S7eSuem"
     }
   },
   "contextual": {
-    "options": [
-      "copy",
-      "view"
-    ]
+    "options": ["copy", "view"]
   },
   "footer": {
     "socials": {
-      "discord": "https://discord.gg/tesjNBszQe"
+      "discord": "https://discord.gg/c94S7eSuem"
     }
   },
-  "description": "Guides for setting up, managing, and troubleshooting your Sculk Hosting game server.",
   "background": {
     "decoration": "windows",
-    "color": {
-      "dark": "#1d2124"
-    }
+    "color": { "dark": "#1d2124" }
   }
 }
