@@ -1,34 +1,30 @@
 ---
 title: "Plugins, mods, and modpacks"
-sidebarTitle: "Plugins, mods, and modpacks"
-description: "Install and manage Minecraft plugins, individual mods, and complete modpacks."
-icon: "puzzle-piece"
+description: "Install compatible plugins, mods, modpacks, and worlds."
 ---
 
-# Plugins, mods, and modpacks
-
-The Sculk panel adapts its management tools to the server software you run.
+Minecraft plugins and mods use different server types. Check **Version** first so you know which software your server runs.
 
 ## Plugins
 
-Plugins run on server software such as Paper or Purpur. Install compatible `.jar` files into the `plugins` folder, then restart the server. Configure installed plugins from their generated folders.
+Use **MC Utils** → **Plugins** on a compatible server such as Paper or Purpur. Follow the installer to choose a plugin version that supports your Minecraft version. You can also upload plugin `.jar` files into the `plugins` folder using **Files** or [SFTP](/server-management/files-sftp). Restart the server and check **Console** for load errors.
 
 ## Mods
 
-Mods require a loader such as Fabric, Forge, or NeoForge. Upload compatible mod files into the `mods` folder. In most cases, every player must install the same loader, Minecraft version, and client-side mod set.
+Use a matching mod loader such as Fabric, Forge, or NeoForge before installing mods. Open **MC Utils** → **Mods** on a modded server, or upload compatible mod files into `mods`. If the page says there is no `/mods` folder, the selected server likely does not use a mod loader. Many mods also need to be installed on each player's client.
+
+<Warning>Do not install files from sources you do not trust. Back up your server before adding or updating multiple add-ons, and check each add-on's version and dependencies.</Warning>
 
 ## Modpacks
 
-A modpack bundles a tested set of mods and configurations. Use the panel's modpack installer when available, or upload the pack's server files through SFTP.
+Open **MC Utils** → **Modpacks** to search CurseForge, Modrinth, or Feed the Beast. Select a pack and follow the panel's installer. A modpack writes into the server root and can overwrite files with matching names. The installer may also change the startup command to run the pack. Make a [backup](/server-management/backups) before installing one, especially on a server with an existing world.
 
-<Warning>
-  It is currently not possible to use both Plugins and Mods reliably on a server at the same time
-</Warning>
+Players often need the same modpack installed on their own computers. Follow the pack author's client instructions.
 
-## Compatibility checklist
+## Worlds and maps
 
-- Minecraft version matches
-- Correct loader and loader version
-- Required dependencies are installed
-- Client and server mod lists agree
-- Enough memory is allocated for the pack
+Open **MC Utils** → **Worlds** to browse CurseForge maps. Choose a compatible map and follow its install flow. If you are bringing your own world, upload its folder with **Files** or [SFTP](/server-management/files-sftp) while the server is stopped. Check the world folder name and the `level-name` setting in `server.properties` before starting.
+
+For a folder from your computer, follow [Upload a world](/minecraft/upload-world).
+
+The **World Viewer** is a separate panel section for viewing world data when supported. For game settings such as difficulty or view distance, use **MC Utils** → **Properties**, save your changes, and restart when required.

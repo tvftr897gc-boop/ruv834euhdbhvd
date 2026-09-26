@@ -1,35 +1,20 @@
 ---
-title: "Minecraft setup"
-sidebarTitle: "Minecraft setup"
-description: "Choose Minecraft server software, accept the EULA, and connect for the first time."
-icon: "cube"
+title: "Choose Minecraft server software"
+description: "Install a server type and version from the panel."
 ---
 
-# Minecraft setup
+Open **MC Utils** → **Version**. Select the server software, then choose a Minecraft version and build. The panel lists options including Vanilla, Paper, Fabric, Forge, NeoForge, Purpur, and Velocity. Availability depends on what the software publisher provides.
 
-Sculk supports common Minecraft server software, including Paper, Purpur, Fabric, Forge, and other compatible server jars.
-
-## Choose your software
-
-| Software | Best for |
+| Software | Typical use |
 | --- | --- |
-| Paper or Purpur | Plugins, performance, and most public servers |
-| Fabric | Lightweight modded servers and technical modpacks |
-| Forge or NeoForge | Large mod ecosystems and many curated modpacks |
-| Vanilla | The unmodified Minecraft server experience |
+| Vanilla | Unmodified Minecraft server. |
+| Paper or Purpur | Bukkit-style plugins and performance features. |
+| Fabric | Fabric mods. |
+| Forge or NeoForge | Mods built for that loader. |
+| Velocity | Proxy connecting multiple backend servers. |
 
-<Steps>
-  <Step title="Select a version">
-    Use the installer or version changer in the panel to choose your Minecraft version and server software.
-  </Step>
-  <Step title="Start once">
-    Start the server so it can generate its initial files.
-  </Step>
-  <Step title="Connect">
-    Add the panel's primary server address to Minecraft's multiplayer list.
-  </Step>
-</Steps>
+Before switching, make a [backup](/server-management/backups). Changing server types can make existing plugins, mods, or worlds incompatible. The **Version** page says the server is stopped before installation and left stopped afterward. Review the console when you start it again.
 
-<Tip>
-  Only use plugins, mods, and server software built for the Minecraft version you selected.
-</Tip>
+For a specific version of Minecraft, also check the **Startup** variables if your game template exposes them. A server update does not update player clients, mods, or plugins for you.
+
+When the server finishes starting, copy its address and [connect from Minecraft](/getting-started/connect).

@@ -1,33 +1,7 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# Sculk Hosting documentation
 
-# Documentation project instructions
+This Mintlify repository contains customer-facing guides for the Sculk Hosting game panel. Pages are MDX files with YAML frontmatter. Navigation and branding live in `docs.json`.
 
-## About this project
+Use active voice, second person, and concise steps. Use sentence case headings, bold exact panel labels, and code formatting for paths, commands, and file names. Use fictional addresses and no credentials in examples. Document customer controls visible on the relevant server type. Warn before actions that overwrite files, change software, or restore data. Use the live panel as the source of truth for exact UI wording.
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
-
-## Terminology
-
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
-
-## Style preferences
-
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
-
-## Content boundaries
-
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+Check navigation and internal links when adding or renaming pages. Preview with `npx mint dev` when available.

@@ -1,41 +1,23 @@
 ---
 title: "Files and SFTP"
-sidebarTitle: "Files and SFTP"
-description: "Edit server files in the browser or transfer larger files securely with SFTP."
-icon: "folder-open"
+description: "Upload, edit, and transfer server files."
 ---
 
-# Files and SFTP
+## Use the file manager
 
-Use the panel file manager for quick edits and SFTP for large uploads, folders, or repeated transfers.
+Open **Files** on your server. Use **Upload** for files, **Upload folder** for directories, **New file** or **New folder** to create items, and **Code editor** to edit text files. Select a folder to open it. The search field searches the current folder.
 
-## File manager
-
-Select **Files** from your server sidebar. You can create folders, upload files, edit text-based configuration files, rename items, and download files directly in the browser.
-
-<Note>
-  Stop the server before replacing worlds, databases, or important configuration files. Some applications overwrite changed files during shutdown.
-</Note>
+Stop the server before replacing a world, plugin, mod, or configuration file that the game might write while running. Create a [backup](/server-management/backups) first.
 
 ## Connect with SFTP
 
-Your exact SFTP hostname, port, username, and connection instructions are shown in the panel.
+SFTP is useful for larger transfers or many files at once.
 
-<Steps>
-  <Step title="Install an SFTP client">
-    Use a client such as WinSCP, Cyberduck, or FileZilla.
-  </Step>
-  <Step title="Copy the panel credentials">
-    Open your server's **Settings** or SFTP connection area and copy the displayed host, port, and username.
-  </Step>
-  <Step title="Authenticate">
-    Use the same password as your game-panel account unless the panel specifies otherwise.
-  </Step>
-  <Step title="Transfer files">
-    Connect and upload files into the correct server directory.
-  </Step>
-</Steps>
+1. Open **Settings** and find the **SFTP** section.
+2. Copy the **Address** and **Username** shown for your server.
+3. In an SFTP client such as FileZilla or Cyberduck, enter the host and port from the displayed address, your SFTP username, and your panel sign-in password.
+4. Connect and transfer files into the appropriate server folder.
 
-<Warning>
-  SFTP is not plain FTP. Make sure your client uses the **SFTP** protocol.
-</Warning>
+The SFTP address and username are server specific. Copy them from your own panel instead of using values from another server. Do not share your password or save it in a shared client profile.
+
+<Tip>If you delete a file by mistake, check **Recycle Bin** for a recovery option. Keep separate backups for changes you cannot afford to lose.</Tip>
