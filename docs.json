@@ -31,7 +31,7 @@
       {
         "group": "Minecraft",
         "icon": "cube",
-        "pages": ["minecraft/getting-started", "minecraft/plugins-mods-modpacks", "minecraft/upload-world"]
+        "pages": ["minecraft/getting-started", "minecraft/plugins-mods-modpacks", "minecraft/upload-world", "minecraft/players"]
       },
       {
         "group": "Account & Billing",
